@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/d67a5d7ab9.js" crossorigin="anonymous"></script>
+</head
+>
+<body>
+   <div id="header">
+      <div class="container">
+         <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+         <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Sudhanshu</span><br>Shivam From India</h1>
+         </div>
+      </div>
+   </div>
+   <!----about------>
+   <div id="about">
+      <div class="container">
+         <div class="row">
+            <div class="about-col-1">
+               <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-tittle">About Me</h1>
+               <p> I am a dedicated and accomplished web developer currently pursuing a Bachelor's degree in Computer Science and Engineering at RGIPT, an esteemed institute of National Importance recognized for its excellence in education.
+               As a student,I am committed to continuous learning and strive to expand my knowledge in the dynamic world of web development. My journey is fueled by a relentless desire to master new skills and contribute meaningfully to the ever- evolving realm of technology.IN addition to my Academic pursuits, i actively engage in projects that allow me to apply me to my programming expertise, showcasing my commitment to pratical application and innovation in the field.</p>
+               
+               <div class="tab-tittle">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links"onclick="opentab('education')">Education</p>
+               </div>
+               <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                     <li><span>Web Development</span><br>Web app Development</li>
+                     <li><span>Graphic Design</span><br>Application program interfaces</li>
+                     <li><span>Creativity</span><br>Interpersonal Skills</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                     <li><span>2024</span><br>Internship at CodSoft</li>
+                     <li><span>2023 - current</span><br>Graphic Coordinator at GDSC,RGIPT</li>
+                  </ul>
+               </div>
+               <div class="tab-contents" id="education">
+                  <ul>
+                     <li><span>2022 - current</span><br>BTech from RGIPT</li>
+                     <li><span>2019 - 2021</span><br>Higher Secondary Education from Patna Collegiate School</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--projects-->
+   <div id="portfolio">
+      <div class="container">
+         <h1 class="sub-tittle">My Projects</h1>
+         <div class="work-list">
+           <div class="work">
+             <img src="images/Project1.png">
+             <div class="layer">
+               <h3>Canteen Swift Pay</h3>
+               <p>This website helps the students to order the canteen foods with guided information about the food, make their payment easy & fast.</p>
+               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+             <img src="images/project2.png">
+             <div class="layer">
+               <h3>Spotify clone</h3>
+               <p>It is simple clone of spotify trending music app , include few of trending songs you can listen to it.</p>
+               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+             <img src="images/Project3.png">
+             <div class="layer">
+               <h3>Tour Nest</h3>
+               <p>This website helps to find the location for our trip its provides you the best location accordingly your choice selection. </p>
+               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+           </div>
+           <div class="work">
+             <img src="images/Project4.png">
+             <div class="layer">
+               <h3>Weather Report</h3>
+               <p>This website helps to calculate the weather & gives appropriate temperature for that location. </p>
+               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+           </div>
+        </div>
+         <a href="#" class="btn">See more</a>
+      </div>
+   </div>
+   <div id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-tittle">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i>  contact@sudhanshushivam1@gmail.com</p>
+               <p><i class="fa-solid fa-square-phone"></i>  9931693809</p>
+               <div class="social-icons">
+                  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+               </div>
+               <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="Email" placeholder="Your email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <p>copyright © Sudhanshu Shivam, ILS </p>
+      </div>
+   </div>
+      
+   <script src="main.js"></script>
+   <script>
+      var sidemeu =document.getElementById("sidemenu");
+      
+      function openmenu(){
+         sidemeu.style.right = "0";
+      }
+      function closemenu(){
+         sidemeu.style.right = "-200px";
+      }
+   </script>
+   <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyWaIJs8gQyv3dXzjRLFIgpZIsUjfjHcMXAjihfMjMbNt4zTx9-IZwG2sg4xUf4Cn-TQA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+                  msg.innerHTML = "Message sent successfully"
+                  setTimeout(function(){
+                     msg.innerHTML = ""
+                  },5000)
+                  form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+</html>
